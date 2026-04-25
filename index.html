@@ -9,15 +9,21 @@
 <meta name="author" content="Umesh T">
 <meta name="robots" content="index, follow">
 
-<meta property="og:title" content="Umesh T | Portfolio">
+<meta property="og:title" content="Umesh T | Professional Portfolio">
 <meta property="og:description" content="Portfolio of Umesh T featuring Data Analytics, Software Development, Automation and Dashboard Projects.">
 <meta property="og:type" content="website">
 
 <title>Umesh T | Data Analyst & Software Developer</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
 font-family:Arial,sans-serif;
 background:#0f172a;
 color:#ffffff;
@@ -25,66 +31,90 @@ line-height:1.6;
 }
 
 header{
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
-background:linear-gradient(135deg,#111827,#2563eb);
+background:linear-gradient(135deg,#0f172a,#1d4ed8,#2563eb);
 }
 
-h1{
-font-size:42px;
-margin:0;
+header h1{
+font-size:52px;
+margin-bottom:10px;
 }
 
-h2{
-color:#60a5fa;
-margin-top:0;
-}
-
-h3{
-margin-bottom:5px;
+header p{
+font-size:20px;
+color:#dbeafe;
+margin-bottom:20px;
 }
 
 section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:30px 20px;
+padding:40px 20px;
 }
 
 .card{
 background:#1e293b;
-padding:22px;
-border-radius:16px;
-margin:15px 0;
-box-shadow:0 8px 20px rgba(0,0,0,.25);
+padding:24px;
+border-radius:18px;
+margin:18px 0;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+h2{
+color:#60a5fa;
+margin-bottom:15px;
+}
+
+h3{
+margin-bottom:6px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 20px;
+padding:12px 22px;
 background:#2563eb;
 color:#fff;
 text-decoration:none;
 border-radius:10px;
-margin-top:10px;
 font-weight:bold;
-margin-right:10px;
-margin-bottom:10px;
+margin:6px;
+transition:0.3s;
 }
 
 .btn:hover{
 background:#1d4ed8;
-}
-
-footer{
-text-align:center;
-padding:20px;
-color:#cbd5e1;
+transform:scale(1.05);
 }
 
 .grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:16px;
+gap:18px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+text-align:center;
+}
+
+.stat-box{
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.stat-box h2{
+font-size:34px;
+color:#60a5fa;
 }
 
 ul{
@@ -100,16 +130,21 @@ color:#93c5fd;
 text-decoration:none;
 }
 
-a:hover{
-text-decoration:underline;
+footer{
+text-align:center;
+padding:25px;
+color:#cbd5e1;
 }
 
-@media(max-width:700px){
-.grid{
+@media(max-width:768px){
+.grid,.stats{
 grid-template-columns:1fr;
 }
-h1{
-font-size:32px;
+header h1{
+font-size:38px;
+}
+header p{
+font-size:18px;
 }
 }
 </style>
@@ -119,26 +154,38 @@ font-size:32px;
 
 <header>
 <h1>Umesh T</h1>
-<p>Data Analyst | Software Developer | Python | SQL | Power BI | Django</p>
+<p>Data Analyst | Python Developer | SQL | Power BI | Django | BEL Apprentice</p>
 
-<a class="btn" href="tel:6363470490">Call Me</a>
-
-<a class="btn" href="mailto:umeshtumesh1412@gmail.com?subject=Job Opportunity&body=Hello Umesh,%0D%0AWe would like to connect with you regarding an opportunity.">
-Email Me
-</a>
-
+<a class="btn" href="Umesh_Resume.pdf" download>Download Resume</a>
+<a class="btn" href="mailto:umeshtumesh1412@gmail.com">Hire Me</a>
 <a class="btn" href="https://linkedin.com/in/umesh-t-56b25330a" target="_blank">LinkedIn</a>
-
 <a class="btn" href="https://github.com/Umeshtumegithub" target="_blank">GitHub</a>
 
 </header>
 
 <section>
 
+<div class="stats">
+<div class="stat-box">
+<h2>4+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat-box">
+<h2>1+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h2>2</h2>
+<p>Domains: Analytics + Development</p>
+</div>
+</div>
+
 <div class="card">
 <h2>Professional Summary</h2>
 <p>
-Detail-oriented engineering graduate with hands-on experience in data analytics, software development, automation, dashboard reporting and deployment support. Skilled in Python, SQL, Excel, Power BI, Django, REST APIs and problem-solving. Passionate about transforming raw data into business insights and building scalable solutions.
+Detail-oriented engineering graduate with hands-on experience in data analytics, software development, automation, dashboard reporting and deployment support. Skilled in Python, SQL, Excel, Power BI, Django, REST APIs and problem-solving. Passionate about transforming raw data into business insights and building scalable digital solutions.
 </p>
 </div>
 
@@ -148,53 +195,45 @@ Detail-oriented engineering graduate with hands-on experience in data analytics,
 <h3>Graduate Apprentice – BEL, Bengaluru</h3>
 <small>2025 – Present</small>
 <ul>
-<li>Analyzed operational data and maintained structured datasets for reporting.</li>
-<li>Generated MIS reports and dashboards for management decisions.</li>
-<li>Improved process efficiency through automation and validation.</li>
-<li>Coordinated with internal teams for reporting requirements.</li>
+<li>Analyzed structured operational data and prepared MIS reports for management decisions.</li>
+<li>Created dashboards and automated repetitive reporting workflows.</li>
+<li>Improved data accuracy through validation and process optimization.</li>
+<li>Collaborated with internal teams for reporting requirements.</li>
 </ul>
 
 <h3>AI DevOps Intern – Rooman Technologies</h3>
 <small>Dec 2024 – Mar 2025</small>
 <ul>
-<li>Worked on CI/CD pipeline support, workflow automation and deployment tasks.</li>
-<li>Handled logs, documentation and operational monitoring.</li>
-<li>Supported cloud hosting and version control activities.</li>
+<li>Worked on CI/CD pipeline support, deployment processes and automation tasks.</li>
+<li>Handled logs, monitoring and technical documentation.</li>
+<li>Supported AWS cloud hosting and Git version control.</li>
 </ul>
 
 </div>
 
 <div class="card">
-<h2>Projects</h2>
+<h2>Featured Projects</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>HR Attrition Analysis</h3>
-<p>
-Performed data cleaning, EDA and visualization to identify employee attrition trends using Python, Pandas and Matplotlib.
-</p>
+<p>Performed EDA, cleaned HR datasets and identified attrition trends using Python and visualization tools.</p>
 </div>
 
 <div class="card">
-<h3>Sales Dashboard Project</h3>
-<p>
-Designed KPI dashboard using Excel / Power BI to monitor revenue growth and business performance.
-</p>
+<h3>Sales Dashboard</h3>
+<p>Built KPI dashboard in Excel / Power BI to monitor revenue growth and category performance.</p>
 </div>
 
 <div class="card">
-<h3>Campus Event Management System</h3>
-<p>
-Built full-stack Django project with role-based login, approvals, scheduling and feedback modules.
-</p>
+<h3>Campus Event Management</h3>
+<p>Developed Django web app with login system, approvals, scheduling and feedback modules.</p>
 </div>
 
 <div class="card">
 <h3>Google Maps Automation</h3>
-<p>
-Developed Python Selenium automation scripts for extracting structured location data.
-</p>
+<p>Created Selenium automation scripts for structured location data extraction.</p>
 </div>
 
 </div>
@@ -233,27 +272,18 @@ Developed Python Selenium automation scripts for extracting structured location 
 <div class="card">
 <h2>Education</h2>
 <p>
-B.E. Information Science & Engineering – CMR Institute of Technology, Bengaluru (CGPA: 7.93)<br>
+B.E. Information Science & Engineering – CMR Institute of Technology, Bengaluru (CGPA: 7.93)<br><br>
 Diploma in Computer Science & Engineering – Bharath Polytechnic, Bangarapet (76.72%)
 </p>
 </div>
 
 <div class="card">
-<h2>Certifications</h2>
-<ul>
-<li>Infosys Data Analyst Program</li>
-<li>Google Cloud Fundamentals</li>
-<li>Cryptography Certification</li>
-</ul>
-</div>
-
-<div class="card">
 <h2>Contact</h2>
 <p>
-Phone: <a href="tel:6363470490">6363470490</a><br>
-Email: <a href="mailto:umeshtumesh1412@gmail.com">umeshtumesh1412@gmail.com</a><br>
-LinkedIn: <a href="https://linkedin.com/in/umesh-t-56b25330a" target="_blank">View Profile</a><br>
-GitHub: <a href="https://github.com/Umeshtumegithub" target="_blank">View GitHub</a>
+📞 <a href="tel:6363470490">6363470490</a><br><br>
+📧 <a href="mailto:umeshtumesh1412@gmail.com">umeshtumesh1412@gmail.com</a><br><br>
+🔗 <a href="https://linkedin.com/in/umesh-t-56b25330a" target="_blank">LinkedIn</a><br><br>
+💻 <a href="https://github.com/Umeshtumegithub" target="_blank">GitHub</a>
 </p>
 </div>
 
