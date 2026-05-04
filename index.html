@@ -1,332 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Umesh T | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<title>Umesh T</title>
 
 <style>
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
 body{
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
-  color:#ffffff;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:#ffffff;
 }
 
-/* Navbar */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:1000;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 25px;
-  background:rgba(0,0,0,0.55);
-  backdrop-filter:blur(10px);
+.wrap{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
-.logo{
-  font-size:26px;
-  font-weight:800;
-  color:#38bdf8;
-}
-
-nav ul{
-  display:flex;
-  gap:18px;
-  list-style:none;
-}
-
-nav ul li a{
-  text-decoration:none;
-  color:white;
-  font-size:14px;
-}
-
-nav ul li a:hover{
-  color:#38bdf8;
-}
-
-/* Hero */
 .hero{
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:110px 20px 60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:center;
+    min-height:100vh;
 }
 
-.hero-container{
-  max-width:1200px;
-  width:100%;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
-}
-
-.hero-text h1{
-  font-size:52px;
-  line-height:1.2;
-}
-
-.hero-text span{
-  color:#38bdf8;
-}
-
-.hero-text h2{
-  margin-top:10px;
-  font-size:28px;
-  color:#cbd5e1;
-}
-
-.hero-text p{
-  margin-top:18px;
-  line-height:1.8;
-  color:#dbeafe;
+.hero img{
+    width:300px;
+    height:380px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #38bdf8;
 }
 
 .btn{
-  display:inline-block;
-  margin-top:28px;
-  padding:14px 28px;
-  border-radius:10px;
-  background:#38bdf8;
-  color:#00111f;
-  text-decoration:none;
-  font-weight:700;
+    display:inline-block;
+    background:#38bdf8;
+    color:#000000;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
 }
 
-.btn:hover{
-  transform:scale(1.05);
-}
-
-/* Correct Photo Section */
-.hero-photo{
-  display:flex;
-  justify-content:center;
-}
-
-.hero-photo img{
-  width:320px;
-  height:390px;
-  object-fit:cover;
-  object-position:center top;
-  border-radius:22px;
-  border:4px solid #38bdf8;
-  box-shadow:0 0 30px rgba(56,189,248,0.7);
-  background:#ffffff;
-}
-
-/* Section */
-section{
-  padding:70px 20px;
-}
-
-.title{
-  text-align:center;
-  font-size:36px;
-  color:#38bdf8;
-  margin-bottom:35px;
-}
-
-/* Cards */
-.grid{
-  max-width:1100px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:20px;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
 }
 
 .card{
-  background:rgba(255,255,255,0.06);
-  padding:22px;
-  border-radius:18px;
+    background:#ffffff14;
+    padding:15px;
+    border-radius:14px;
 }
 
-.card h3{
-  color:#38bdf8;
-  margin-bottom:10px;
-}
+@media(max-width:800px){
 
-/* Contact */
-.contact{
-  text-align:center;
-}
-
-.contact p{
-  margin:10px 0;
-  font-size:18px;
-}
-
-/* Footer */
-footer{
-  text-align:center;
-  padding:20px;
-  color:#94a3b8;
-}
-
-/* Mobile */
-@media(max-width:900px){
-
-nav ul{
-  display:none;
-}
-
-.hero-container{
-  grid-template-columns:1fr;
-  text-align:center;
-}
-
-.hero-text h1{
-  font-size:38px;
-}
-
-.hero-text h2{
-  font-size:24px;
-}
-
-.hero-photo img{
-  width:250px;
-  height:310px;
-  margin-top:20px;
+.hero{
+    grid-template-columns:1fr;
+    text-align:center;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav>
-<div class="logo">Umesh T</div>
+<div class="wrap">
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+<section class="hero">
 
-<!-- Hero -->
-<section class="hero" id="about">
+<div>
 
-<div class="hero-container">
+<h1>Umesh T</h1>
 
-<div class="hero-text">
-
-<h1>Hello, I'm <span>Umesh T</span></h1>
-
-<h2>Software Developer | 1 Year Experience</h2>
+<h2>
+Software Developer | 1 Year Experience
+</h2>
 
 <p>
-Engineering graduate skilled in C, Java, Python, SQL and MySQL.
-Passionate about building modern applications and solving real-world problems.
+Skilled in C, Java, Python, SQL and MySQL.
 </p>
 
-<a href="#contact" class="btn">Hire Me</a>
+<a href="#contact" class="btn">
+Hire Me
+</a>
 
 </div>
 
-<div class="hero-photo">
+<div>
 
-<!-- IMPORTANT:
-Upload your image file in GitHub repo and name it photo.jpg -->
-
-<img src="photo.jpg" alt="Umesh Photo">
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Skills -->
-<section id="skills">
-
-<h2 class="title">Skills</h2>
-
-<div class="grid">
-
-<div class="card"><h3>C</h3></div>
-<div class="card"><h3>Java</h3></div>
-<div class="card"><h3>Python</h3></div>
-<div class="card"><h3>SQL</h3></div>
-<div class="card"><h3>MySQL</h3></div>
-<div class="card"><h3>GitHub</h3></div>
+<img
+src="data:image/jpeg;base64,PASTE_REAL_BASE64_IMAGE_HERE"
+alt="Umesh Photo"
+>
 
 </div>
 
 </section>
 
-<!-- Projects -->
-<section id="projects">
+<h2>Skills</h2>
 
-<h2 class="title">Projects</h2>
+<div class="cards">
 
-<div class="grid">
+<div class="card">C</div>
+
+<div class="card">Java</div>
+
+<div class="card">Python</div>
+
+<div class="card">SQL</div>
+
+<div class="card">MySQL</div>
+
+</div>
+
+<h2 id="contact">
+Contact
+</h2>
 
 <div class="card">
-<h3>Bank Management System</h3>
-<p>Secure banking website with transactions and admin panel.</p>
-</div>
 
-<div class="card">
-<h3>ATM Simulation System</h3>
-<p>Deposit, withdraw and balance enquiry system.</p>
-</div>
-
-<div class="card">
-<h3>Sales Dashboard</h3>
-<p>Created KPI dashboard using Excel and Power BI.</p>
-</div>
-
-<div class="card">
-<h3>Customer Churn Prediction</h3>
-<p>Machine learning project for customer retention.</p>
-</div>
++91 6363470490
+<br>
+umeshtumesh1412@gmail.com
 
 </div>
 
-</section>
-
-<!-- Contact -->
-<section id="contact">
-
-<h2 class="title">Contact Me</h2>
-
-<div class="contact">
-
-<p>📞 +91 6363470490</p>
-<p>📧 umeshtumesh1412@gmail.com</p>
-<p>📍 Bengaluru, India</p>
-
 </div>
-
-</section>
-
-<footer>
-© 2026 Umesh T | GitHub Portfolio
-</footer>
 
 </body>
+
 </html>
