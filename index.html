@@ -11,23 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; color: #2c3e50; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; color: #2c3e50; overflow-x: hidden; }
+        
+        /* Professional Dark Header */
         .hero { 
-            background: linear-gradient(rgba(33, 37, 41, 0.9), rgba(33, 37, 41, 0.9)), url('https://images.unsplash.com/photo-1551288049-bbbda536ad0a?q=80&w=2070');
-            background-size: cover; background-position: center;
-            color: white; padding: 120px 20px; text-align: center; 
+            background: #2c3e50;
+            color: white; padding: 100px 20px; text-align: center; 
+            border-bottom: 5px solid #3498db;
         }
-        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid #007bff; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        .btn-primary { border-radius: 30px; padding: 12px 30px; font-weight: 600; transition: 0.3s; }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,123,255,0.4); }
-        .section-title { font-weight: 700; margin-bottom: 40px; position: relative; display: inline-block; }
-        .section-title::after { content: ''; width: 50px; height: 4px; background: #007bff; position: absolute; bottom: -10px; left: 0; }
-        .card { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s; }
+        
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #3498db; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        
+        .btn-download { 
+            background: #3498db; color: white; border-radius: 30px; padding: 12px 30px; 
+            font-weight: 600; text-decoration: none; display: inline-block; transition: 0.3s;
+        }
+        .btn-download:hover { background: #2980b9; transform: scale(1.05); color: white; }
+
+        .section-title { font-weight: 700; margin-bottom: 30px; position: relative; display: inline-block; }
+        .section-title::after { content: ''; width: 50px; height: 4px; background: #3498db; position: absolute; bottom: -10px; left: 0; }
+
+        .card { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.4s; height: 100%; }
         .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .skill-badge { background: #e9ecef; color: #007bff; font-weight: 600; padding: 8px 20px; border-radius: 50px; margin: 5px; display: inline-block; font-size: 0.85rem; }
-        footer { background: #212529; color: white; padding: 40px 0; }
-        .contact-link { color: white; font-size: 1.5rem; margin: 0 10px; transition: 0.3s; }
-        .contact-link:hover { color: #007bff; }
+        
+        .skill-badge { background: #e9ecef; color: #3498db; font-weight: 600; padding: 8px 20px; border-radius: 50px; margin: 5px; display: inline-block; font-size: 0.85rem; border: 1px solid #dee2e6; }
+        
+        .contact-link { color: white; font-size: 1.6rem; margin: 0 12px; transition: 0.3s; }
+        .contact-link:hover { color: #3498db; }
+        
+        footer { background: #2c3e50; color: white; padding: 40px 0; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -35,23 +47,28 @@
 <header class="hero">
     <div class="container" data-aos="fade-down">
         <img src="profile.jpg" alt="Umesh T" class="profile-img mb-4">
-        <h1 class="display-4 fw-bold mb-2">UMESH T</h1>
-        <p class="lead mb-4 opacity-75">Data Analyst | Python | Power BI | SQL</p>
+        <h1 class="display-4 fw-bold">UMESH T</h1>
+        <p class="lead mb-4">Data Analyst | Python | Power BI | SQL</p>
+        
         <div class="mb-4">
             <a href="https://linkedin.com/in/your-username" class="contact-link"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/your-username" class="contact-link"><i class="fab fa-github"></i></a>
             <a href="mailto:umeshtumesh1412@gmail.com" class="contact-link"><i class="fas fa-envelope"></i></a>
         </div>
-        <a href="Umesh_T Data Analyst Resume Updated.pdf" class="btn btn-primary btn-lg" download>Download Full Resume <i class="fas fa-file-download ms-2"></i></a>
+        
+        <a href="Umesh_T_Resume.pdf" class="btn-download" download>
+            Download Full Resume <i class="fas fa-file-download ms-2"></i>
+        </a>
     </div>
 </header>
 
 <main class="container my-5">
+    
     <section class="mb-5" data-aos="fade-up">
         <h2 class="section-title">Professional Summary</h2>
         <p class="fs-5 text-muted">
-            [span_4](start_span)Results-oriented Data Analyst with hands-on experience in MIS reporting, dashboard creation, and KPI tracking[span_4](end_span). 
-            [span_5](start_span)Skilled in transforming raw data into actionable insights using Python and SQL to improve business performance[span_5](end_span).
+            Results-oriented Data Analyst with hands-on experience in data analysis, MIS reporting, and dashboard creation. 
+            I specialize in transforming raw data into actionable insights to improve business decision-making and performance.
         </p>
     </section>
 
@@ -68,60 +85,45 @@
     </section>
 
     <section class="mb-5">
-        <h2 class="section-title mb-5">Key Data Projects</h2>
+        <h2 class="section-title mb-5">Key Projects</h2>
         <div class="row g-4">
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card h-100 p-4">
+                <div class="card p-4">
                     <h5 class="fw-bold text-primary">Employee Attrition Analysis</h5>
-                    [span_6](start_span)<p class="small text-muted">Analyzed HR datasets using Python to identify attrition trends by department and salary[span_6](end_span). [span_7](start_span)Generated insights for retention strategy[span_7](end_span).</p>
+                    <p class="small text-muted">Analyzed HR datasets using Python to identify attrition trends by department and tenure. Generated insights to improve workforce planning.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card h-100 p-4">
+                <div class="card p-4">
                     <h5 class="fw-bold text-primary">Sales Performance Dashboard</h5>
-                    [span_8](start_span)<p class="small text-muted">Developed interactive dashboards to track revenue and monthly growth KPIs using Power BI and Excel[span_8](end_span).</p>
+                    <p class="small text-muted">Developed interactive dashboards in Power BI and Excel to track revenue, profit, and monthly sales growth.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card h-100 p-4">
+                <div class="card p-4">
                     <h5 class="fw-bold text-primary">Customer Churn Prediction</h5>
-                    [span_9](start_span)<p class="small text-muted">Built machine learning models to predict churn probability and support customer retention efforts[span_9](end_span).</p>
+                    <p class="small text-muted">Built machine learning models to predict churn probability and support data-driven customer retention efforts.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="mb-5" data-aos="fade-up">
-        <h2 class="section-title">Certifications</h2>
+        <h2 class="section-title">Experience Highlights</h2>
         <div class="card p-4">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-award fa-2x text-warning me-3"></i>
-                        <div>
-                            <h6 class="fw-bold mb-0">Infosys Data Analyst Program</h6>
-                            <small class="text-muted">2025 - Present</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-cloud fa-2x text-info me-3"></i>
-                        <div>
-                            <h6 class="fw-bold mb-0">Google Cloud Fundamentals</h6>
-                            <small class="text-muted">Dec 2024 - Mar 2025</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h6 class="fw-bold mb-1">Graduate Apprentice | Bharat Electronics Limited (BEL)</h6>
+            <p class="text-muted small mb-3">Managed SAP operational data and automated complex Excel reporting for stakeholder decision-making.</p>
+            
+            <h6 class="fw-bold mb-1">AI DevOps Intern | Rooman Technologies</h6>
+            <p class="text-muted small">Supported workflow automation, data collection, and report generation for monitoring records.</p>
         </div>
     </section>
 </main>
 
 <footer class="text-center">
     <div class="container">
-        <p class="mb-2">umeshtumesh1412@gmail.com | +91 6363470490</p>
-        <p class="small opacity-50 mb-0">&copy; 2026 Umesh T | Built with Mobile Code</p>
+        <p class="mb-1">umeshtumesh1412@gmail.com | +91 6363470490</p>
+        <p class="small opacity-50 mb-0">&copy; 2026 Umesh T | Built with Mobile</p>
     </div>
 </footer>
 
@@ -132,4 +134,3 @@
 
 </body>
 </html>
-m
